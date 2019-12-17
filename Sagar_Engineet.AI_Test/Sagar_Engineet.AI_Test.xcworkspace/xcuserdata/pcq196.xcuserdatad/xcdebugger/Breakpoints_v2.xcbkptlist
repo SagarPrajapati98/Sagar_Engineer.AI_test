@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sagar_Engineet.AI_Test/Networking/RequestManager.swift"
+            timestampString = "598275056.502427"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "sendrequest(request:complition:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sagar_Engineet_AI_Test.RequestManger.(sendrequest in _8B12B679E42D6AD6D4EA0731E08464BC)(request: Sagar_Engineet_AI_Test.Request, complition: (Swift.Bool, Foundation.Data, Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "Sagar_Engineet.AI_Test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pcq196/Documents/Sagar_Engineer.AI_test/Sagar_Engineet.AI_Test/Sagar_Engineet.AI_Test/Networking/RequestManager.swift"
+                  timestampString = "598275057.182017"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "190">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Foundation.Data&gt;) -&gt; () in Sagar_Engineet_AI_Test.RequestManger.(sendrequest in _8B12B679E42D6AD6D4EA0731E08464BC)(request: Sagar_Engineet_AI_Test.Request, complition: (Swift.Bool, Foundation.Data, Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "Sagar_Engineet.AI_Test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pcq196/Documents/Sagar_Engineer.AI_test/Sagar_Engineet.AI_Test/Sagar_Engineet.AI_Test/Networking/RequestManager.swift"
+                  timestampString = "598275057.183109"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "137">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sagar_Engineet.AI_Test/Networking/RequestManager.swift"
+            timestampString = "598275056.50246"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "requestwithget(url:complition:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sagar_Engineet.AI_Test/Networking/RequestManager.swift"
+            timestampString = "598275072.923617"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "sendrequest(request:complition:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sagar_Engineet.AI_Test/Networking/RequestManager.swift"
+            timestampString = "598275074.451609"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "sendrequest(request:complition:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

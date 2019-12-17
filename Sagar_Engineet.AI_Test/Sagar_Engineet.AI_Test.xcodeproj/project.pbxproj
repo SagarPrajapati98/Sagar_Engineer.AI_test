@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05B414D053BEC3898F537AF6 /* Pods_Sagar_Engineet_AI_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A6105E490F9B333350069A /* Pods_Sagar_Engineet_AI_Test.framework */; };
 		55074FBC23A8E88400A7C575 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55074FBB23A8E88400A7C575 /* Assets.xcassets */; };
 		55074FBF23A8E88400A7C575 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55074FBD23A8E88400A7C575 /* LaunchScreen.storyboard */; };
 		55074FC823A8E8A600A7C575 /* NSAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55074FC723A8E8A600A7C575 /* NSAppDelegate.swift */; };
@@ -14,6 +15,9 @@
 		55074FD123A8E97000A7C575 /* HomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55074FD023A8E97000A7C575 /* HomViewController.swift */; };
 		55074FD323A8EABB00A7C575 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55074FD223A8EABB00A7C575 /* Post.swift */; };
 		55074FD623A8EB6100A7C575 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55074FD523A8EB6100A7C575 /* RequestManager.swift */; };
+		55074FD823A8EC1300A7C575 /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55074FD723A8EC1300A7C575 /* PostController.swift */; };
+		55074FDA23A8F18900A7C575 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55074FD923A8F18900A7C575 /* Constants.swift */; };
+		55074FDC23A8F46200A7C575 /* CellPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55074FDB23A8F46200A7C575 /* CellPost.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,12 @@
 		55074FD023A8E97000A7C575 /* HomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomViewController.swift; sourceTree = "<group>"; };
 		55074FD223A8EABB00A7C575 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		55074FD523A8EB6100A7C575 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		55074FD723A8EC1300A7C575 /* PostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
+		55074FD923A8F18900A7C575 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		55074FDB23A8F46200A7C575 /* CellPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPost.swift; sourceTree = "<group>"; };
+		62A9E7486BF32FC7C59576B3 /* Pods-Sagar_Engineet.AI_Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sagar_Engineet.AI_Test.debug.xcconfig"; path = "Target Support Files/Pods-Sagar_Engineet.AI_Test/Pods-Sagar_Engineet.AI_Test.debug.xcconfig"; sourceTree = "<group>"; };
+		C909BB8992B09AB6EE193856 /* Pods-Sagar_Engineet.AI_Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sagar_Engineet.AI_Test.release.xcconfig"; path = "Target Support Files/Pods-Sagar_Engineet.AI_Test/Pods-Sagar_Engineet.AI_Test.release.xcconfig"; sourceTree = "<group>"; };
+		F6A6105E490F9B333350069A /* Pods_Sagar_Engineet_AI_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sagar_Engineet_AI_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05B414D053BEC3898F537AF6 /* Pods_Sagar_Engineet_AI_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +55,8 @@
 			children = (
 				55074FB323A8E88200A7C575 /* Sagar_Engineet.AI_Test */,
 				55074FB223A8E88200A7C575 /* Products */,
+				7C8F6454443D910981D8AC0E /* Pods */,
+				7D6572BD85FF7A43939462C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				55074FC723A8E8A600A7C575 /* NSAppDelegate.swift */,
+				55074FD923A8F18900A7C575 /* Constants.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -99,6 +113,7 @@
 		55074FCB23A8E8D400A7C575 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				55074FD723A8EC1300A7C575 /* PostController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -114,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				55074FD023A8E97000A7C575 /* HomViewController.swift */,
+				55074FDB23A8F46200A7C575 /* CellPost.swift */,
 			);
 			path = HomeViewController;
 			sourceTree = "<group>";
@@ -126,6 +142,23 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		7C8F6454443D910981D8AC0E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62A9E7486BF32FC7C59576B3 /* Pods-Sagar_Engineet.AI_Test.debug.xcconfig */,
+				C909BB8992B09AB6EE193856 /* Pods-Sagar_Engineet.AI_Test.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7D6572BD85FF7A43939462C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6A6105E490F9B333350069A /* Pods_Sagar_Engineet_AI_Test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,9 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55074FC323A8E88400A7C575 /* Build configuration list for PBXNativeTarget "Sagar_Engineet.AI_Test" */;
 			buildPhases = (
+				5D37E3709FF976FE5186B1F4 /* [CP] Check Pods Manifest.lock */,
 				55074FAD23A8E88200A7C575 /* Sources */,
 				55074FAE23A8E88200A7C575 /* Frameworks */,
 				55074FAF23A8E88200A7C575 /* Resources */,
+				92D7A75B75F7AED1857E2A91 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,15 +227,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5D37E3709FF976FE5186B1F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sagar_Engineet.AI_Test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92D7A75B75F7AED1857E2A91 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sagar_Engineet.AI_Test/Pods-Sagar_Engineet.AI_Test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sagar_Engineet.AI_Test/Pods-Sagar_Engineet.AI_Test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sagar_Engineet.AI_Test/Pods-Sagar_Engineet.AI_Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		55074FAD23A8E88200A7C575 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55074FD823A8EC1300A7C575 /* PostController.swift in Sources */,
+				55074FDC23A8F46200A7C575 /* CellPost.swift in Sources */,
 				55074FD323A8EABB00A7C575 /* Post.swift in Sources */,
 				55074FC823A8E8A600A7C575 /* NSAppDelegate.swift in Sources */,
 				55074FD123A8E97000A7C575 /* HomViewController.swift in Sources */,
 				55074FD623A8EB6100A7C575 /* RequestManager.swift in Sources */,
+				55074FDA23A8F18900A7C575 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +416,7 @@
 		};
 		55074FC423A8E88400A7C575 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62A9E7486BF32FC7C59576B3 /* Pods-Sagar_Engineet.AI_Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -354,6 +435,7 @@
 		};
 		55074FC523A8E88400A7C575 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C909BB8992B09AB6EE193856 /* Pods-Sagar_Engineet.AI_Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
