@@ -28,7 +28,8 @@ final class RequestManger {
     }
     private func sendrequest(request:Request,complition:@escaping(_ success:Bool,_ resultdata:Data,_ message:String) -> Void){
         Alamofire.request(request.url!, method: request.method!, parameters: request.parameters, encoding: URLEncoding.default, headers: request.header!).responseData { (response) in
-            switch response.result{
+            DispatchQueue.main.async {
+                switch response.result{
                 case .failure:
                     if let message = response.error{
                         complition(false,Data(),message.localizedDescription)
@@ -38,11 +39,14 @@ final class RequestManger {
                     break;
                 case .success:
                     if let resultdt = response.result.value{
+                        let response = String(data: resultdt, encoding: String.Encoding.utf8);
+                        print(response!);
                         complition(true,resultdt,"success")
                     }else{
                         complition(false,Data(),"No data found.");
                     }
                     break;
+                }
             }
         }
     }

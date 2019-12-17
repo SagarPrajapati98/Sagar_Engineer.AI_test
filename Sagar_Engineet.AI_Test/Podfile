@@ -6,5 +6,5 @@ target 'Sagar_Engineet.AI_Test' do
   use_frameworks!
 
   pod 'Alamofire'
-
+  pod 'UIScrollView-InfiniteScroll'
 end

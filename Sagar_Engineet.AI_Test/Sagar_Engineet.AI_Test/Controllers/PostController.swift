@@ -12,8 +12,8 @@ final class PostController{
     
     static let share:PostController = PostController()
     
-    func getPosts(complition:@escaping(_ posts:Post) -> Void){
-        RequestManger.share.requestwithget(url: API.getpostlist) { (success, posts, message) in
+    func getPosts(pagenumber:Int,complition:@escaping(_ posts:Post) -> Void){
+        RequestManger.share.requestwithget(url: API.getpostlist+"\(pagenumber)") { (success, posts, message) in
             if success{
                 let allposts = try? JSONDecoder().decode(Post.self, from: posts)
                 if let listpost = allposts{

@@ -1,16 +1,20 @@
 PODS:
   - Alamofire (4.9.1)
+  - UIScrollView-InfiniteScroll (1.1.0)
 
 DEPENDENCIES:
   - Alamofire
+  - UIScrollView-InfiniteScroll
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - UIScrollView-InfiniteScroll
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  UIScrollView-InfiniteScroll: 3ef456bcbe759c19f510a383cff96e6647c98c98
 
-PODFILE CHECKSUM: dbc89d04fc12d17ed086dd2929f106b9055d0b6d
+PODFILE CHECKSUM: 7d5de178d9ab6a2070ad2ce3311eacde741803a9
 
 COCOAPODS: 1.8.4

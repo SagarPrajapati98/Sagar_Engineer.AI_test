@@ -14,11 +14,9 @@ final class CellPost:UITableViewCell{
     //MARK: - Outlets
     @IBOutlet private weak var labelposttitle:UILabel!
     @IBOutlet private weak var labelcreatedat:UILabel!
-    
+    @IBOutlet weak var switchactivedeactive:UISwitch!
+   
     //MARK: - Variables
-    static var share:CellPost{
-        return UINib(nibName: "CellPost", bundle: nil).instantiate(withOwner: self, options: nil)[0] as! CellPost
-    }
     var posthint:Hits?{
         didSet{
             if let hint = self.posthint{
@@ -28,7 +26,9 @@ final class CellPost:UITableViewCell{
                 if let createdat = hint.created_at{
                     self.labelcreatedat.text = createdat;
                 }
+                self.switchactivedeactive.isOn = hint.isActive;
             }
         }
     }
+    
 }

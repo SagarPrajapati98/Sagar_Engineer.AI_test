@@ -7,7 +7,7 @@
 //
 
 import Foundation
-struct _highlightResult : Codable {
+class _highlightResult : Codable {
     let title : Title?
     let url : Url?
     let author : Author?
@@ -19,7 +19,7 @@ struct _highlightResult : Codable {
         case author = "author"
     }
     
-    init(from decoder: Decoder) throws {
+    required init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         title = try values.decodeIfPresent(Title.self, forKey: .title)
         url = try values.decodeIfPresent(Url.self, forKey: .url)
@@ -27,7 +27,7 @@ struct _highlightResult : Codable {
     }
     
 }
-struct Author : Codable {
+class Author : Codable {
     let value : String?
     let matchLevel : String?
     let matchedWords : [String]?
@@ -39,7 +39,7 @@ struct Author : Codable {
         case matchedWords = "matchedWords"
     }
     
-    init(from decoder: Decoder) throws {
+    required init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         value = try values.decodeIfPresent(String.self, forKey: .value)
         matchLevel = try values.decodeIfPresent(String.self, forKey: .matchLevel)
@@ -47,7 +47,7 @@ struct Author : Codable {
     }
     
 }
-struct Hits : Codable {
+class Hits : Codable {
     let created_at : String?
     let title : String?
     let url : String?
@@ -64,7 +64,7 @@ struct Hits : Codable {
     let _tags : [String]?
     let objectID : String?
     let highlightResult : _highlightResult?
-    
+    var isActive:Bool = false;
     enum CodingKeys: String, CodingKey {
         
         case created_at = "created_at"
@@ -85,7 +85,7 @@ struct Hits : Codable {
         case highlightResult = "_highlightResult"
     }
     
-    init(from decoder: Decoder) throws {
+    required init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         created_at = try values.decodeIfPresent(String.self, forKey: .created_at)
         title = try values.decodeIfPresent(String.self, forKey: .title)
@@ -107,7 +107,7 @@ struct Hits : Codable {
     
 }
 
-struct Post : Codable {
+class Post : Codable {
     let hits : [Hits]?
     let nbHits : Int?
     let page : Int?
@@ -131,7 +131,7 @@ struct Post : Codable {
         case processingTimeMS = "processingTimeMS"
     }
     
-    init(from decoder: Decoder) throws {
+    required init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         hits = try values.decodeIfPresent([Hits].self, forKey: .hits)
         nbHits = try values.decodeIfPresent(Int.self, forKey: .nbHits)
@@ -146,7 +146,7 @@ struct Post : Codable {
     
 }
 
-struct Title : Codable {
+class Title : Codable {
     let value : String?
     let matchLevel : String?
     let matchedWords : [String]?
@@ -158,7 +158,7 @@ struct Title : Codable {
         case matchedWords = "matchedWords"
     }
     
-    init(from decoder: Decoder) throws {
+    required init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         value = try values.decodeIfPresent(String.self, forKey: .value)
         matchLevel = try values.decodeIfPresent(String.self, forKey: .matchLevel)
@@ -167,7 +167,7 @@ struct Title : Codable {
     
 }
 
-struct Url : Codable {
+class Url : Codable {
     let value : String?
     let matchLevel : String?
     let matchedWords : [String]?
@@ -179,7 +179,7 @@ struct Url : Codable {
         case matchedWords = "matchedWords"
     }
     
-    init(from decoder: Decoder) throws {
+    required init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         value = try values.decodeIfPresent(String.self, forKey: .value)
         matchLevel = try values.decodeIfPresent(String.self, forKey: .matchLevel)
