@@ -24,7 +24,15 @@ final class CellPost:UITableViewCell{
                     self.labelposttitle.text = title;
                 }
                 if let createdat = hint.created_at{
-                    self.labelcreatedat.text = createdat;
+                    let formate = DateFormatter();
+                    formate.dateFormat = "yyyy-MM-dd'T'hh:mm:ss.SSS'Z'"
+                    formate.timeZone = TimeZone.current;
+                    if let creatdt = formate.date(from: createdat){
+                        let displayformate = DateFormatter()
+//                        displayformate.dateFormat = "dd/MM/yyyy hh:mm:ss";
+                        displayformate.dateFormat = "E, d MMM yyyy hh:mm:ss a";
+                        self.labelcreatedat.text = displayformate.string(from: creatdt);
+                    }
                 }
                 self.switchactivedeactive.isOn = hint.isActive;
             }

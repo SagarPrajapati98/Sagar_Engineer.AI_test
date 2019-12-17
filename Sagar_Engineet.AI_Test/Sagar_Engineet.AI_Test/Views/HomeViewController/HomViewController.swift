@@ -48,6 +48,9 @@ class HomViewController: UIViewController {
                 self.tableviewposts.reloadData()
                 self.page = allposts.page!
                 self.hasemorepage = self.page < allposts.nbPages!
+                if !self.hasemorepage{
+                    self.tableviewposts.removeInfiniteScroll()
+                }
             }
         }
     }
@@ -79,8 +82,6 @@ extension HomViewController:UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if indexPath.row == self.arrayhints.count - 1 && self.hasemorepage{
             self.getposts(page: self.page + 1)
-        }else{
-            self.tableviewposts.removeInfiniteScroll()
         }
     }
     
