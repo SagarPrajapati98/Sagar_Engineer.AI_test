@@ -11,5 +11,5 @@ import Foundation
 var BASEURL:String = "https://hn.algolia.com/api/"
 
 struct API {
-    static var getpostlist:String = BASEURL + "v1/search_by_date?tags=story&page="
+    static var getPostList:String = BASEURL + "v1/search_by_date?tags=story&page="
 }

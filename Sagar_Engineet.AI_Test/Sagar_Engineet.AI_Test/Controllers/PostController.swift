@@ -13,11 +13,11 @@ final class PostController{
     static let share:PostController = PostController()
     
     func getPosts(pagenumber:Int,complition:@escaping(_ posts:Post) -> Void){
-        RequestManger.share.requestwithget(url: API.getpostlist+"\(pagenumber)") { (success, posts, message) in
+        RequestManger.share.requestwithget(url: API.getPostList+"\(pagenumber)") { (success, posts, message) in
             if success{
-                let allposts = try? JSONDecoder().decode(Post.self, from: posts)
-                if let listpost = allposts{
-                    complition(listpost)
+                let allPosts = try? JSONDecoder().decode(Post.self, from: posts)
+                if let listPost = allPosts{
+                    complition(listPost)
                 }
             }
         }

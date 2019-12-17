@@ -12,16 +12,16 @@ import UIKit
 final class CellPost:UITableViewCell{
     
     //MARK: - Outlets
-    @IBOutlet private weak var labelposttitle:UILabel!
-    @IBOutlet private weak var labelcreatedat:UILabel!
-    @IBOutlet weak var switchactivedeactive:UISwitch!
+    @IBOutlet private weak var labelPostTitle:UILabel!
+    @IBOutlet private weak var labelCreateDate:UILabel!
+    @IBOutlet weak var switchActiveDeactive:UISwitch!
    
     //MARK: - Variables
     var posthint:Hits?{
         didSet{
             if let hint = self.posthint{
                 if let title = hint.title{
-                    self.labelposttitle.text = title;
+                    self.labelPostTitle.text = title;
                 }
                 if let createdat = hint.created_at{
                     let formate = DateFormatter();
@@ -29,12 +29,11 @@ final class CellPost:UITableViewCell{
                     formate.timeZone = TimeZone.current;
                     if let creatdt = formate.date(from: createdat){
                         let displayformate = DateFormatter()
-//                        displayformate.dateFormat = "dd/MM/yyyy hh:mm:ss";
                         displayformate.dateFormat = "E, d MMM yyyy hh:mm:ss a";
-                        self.labelcreatedat.text = displayformate.string(from: creatdt);
+                        self.labelCreateDate.text = displayformate.string(from: creatdt);
                     }
                 }
-                self.switchactivedeactive.isOn = hint.isActive;
+                self.switchActiveDeactive.isOn = hint.isActive;
             }
         }
     }

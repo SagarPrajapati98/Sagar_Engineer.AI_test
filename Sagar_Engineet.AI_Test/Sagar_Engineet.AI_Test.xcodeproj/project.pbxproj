@@ -72,7 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				55074FD423A8EB5400A7C575 /* Networking */,
-				55074FCC23A8E8E000A7C575 /* Classes */,
 				55074FCB23A8E8D400A7C575 /* Controllers */,
 				55074FCA23A8E8CB00A7C575 /* Models */,
 				55074FC923A8E8C400A7C575 /* Views */,
@@ -116,13 +115,6 @@
 				55074FD723A8EC1300A7C575 /* PostController.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		55074FCC23A8E8E000A7C575 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		55074FCF23A8E96400A7C575 /* HomeViewController */ = {

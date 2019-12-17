@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellpost" rowHeight="81" id="yTo-fU-9bW" customClass="CellPost" customModule="Sagar_Engineet_AI_Test" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellpost" rowHeight="81" id="yTo-fU-9bW" customClass="CellPost" customModule="Sagar_Engineet_AI_Test" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="81"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yTo-fU-9bW" id="v2Z-FF-aaK">
@@ -72,9 +72,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="labelcreatedat" destination="deh-TX-puM" id="rmg-Vq-Xfv"/>
-                                            <outlet property="labelposttitle" destination="IzV-Ze-upH" id="lpW-Sl-BFh"/>
-                                            <outlet property="switchactivedeactive" destination="qeQ-Xu-6Fp" id="TpZ-Nq-aLD"/>
+                                            <outlet property="labelCreateDate" destination="deh-TX-puM" id="oSM-z0-qla"/>
+                                            <outlet property="labelPostTitle" destination="IzV-Ze-upH" id="CAM-94-scn"/>
+                                            <outlet property="switchActiveDeactive" destination="qeQ-Xu-6Fp" id="oOz-Py-ONP"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -95,7 +95,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Kuh-bL-Ij2"/>
                     <connections>
-                        <outlet property="tableviewposts" destination="b6W-EW-AWh" id="Cgj-xq-XvE"/>
+                        <outlet property="tableViewPost" destination="b6W-EW-AWh" id="Cgj-xq-XvE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2aU-NM-gW6" userLabel="First Responder" sceneMemberID="firstResponder"/>
