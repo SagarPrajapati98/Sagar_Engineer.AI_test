@@ -71,10 +71,11 @@
 		55074FB323A8E88200A7C575 /* Sagar_Engineet.AI_Test */ = {
 			isa = PBXGroup;
 			children = (
+				556D6FE923A9086600065B5E /* TableViewCell */,
+				556D6FE823A9082200065B5E /* ViewControllers */,
 				55074FD423A8EB5400A7C575 /* Networking */,
 				55074FCB23A8E8D400A7C575 /* Controllers */,
 				55074FCA23A8E8CB00A7C575 /* Models */,
-				55074FC923A8E8C400A7C575 /* Views */,
 				55074FC623A8E89700A7C575 /* Application */,
 				55074FBB23A8E88400A7C575 /* Assets.xcassets */,
 				55074FCD23A8E90600A7C575 /* Main.storyboard */,
@@ -93,14 +94,6 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		55074FC923A8E8C400A7C575 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				55074FCF23A8E96400A7C575 /* HomeViewController */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		55074FCA23A8E8CB00A7C575 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,21 +110,28 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		55074FCF23A8E96400A7C575 /* HomeViewController */ = {
-			isa = PBXGroup;
-			children = (
-				55074FD023A8E97000A7C575 /* HomViewController.swift */,
-				55074FDB23A8F46200A7C575 /* CellPost.swift */,
-			);
-			path = HomeViewController;
-			sourceTree = "<group>";
-		};
 		55074FD423A8EB5400A7C575 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
 				55074FD523A8EB6100A7C575 /* RequestManager.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		556D6FE823A9082200065B5E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				55074FD023A8E97000A7C575 /* HomViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		556D6FE923A9086600065B5E /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				55074FDB23A8F46200A7C575 /* CellPost.swift */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		7C8F6454443D910981D8AC0E /* Pods */ = {
